@@ -24,7 +24,6 @@ h1 {
 	top: 75%;
 	width: 100%;
 }
-
 .nav li {
   font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
@@ -41,5 +40,35 @@ h1 {
 }
 
 .nav a:hover {
-  background-color: #005f5f;
+  background-color: #777777;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
 }
